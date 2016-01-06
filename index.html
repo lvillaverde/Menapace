@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><!-- -- -->a
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Familia Menapace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.modal.css">
+    <link rel="stylesheet" href="css/jquery.datepick.css">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!--[if gt IE 7]>
+      <link rel="stylesheet" type="text/css" href="css/style-ie9.css" />
+    <![endif]-->
+    <style type="text/css">
+    @-moz-document url-prefix() {
+      .bx-viewport {
+        float:left;
+      }
+
+      ol li a.ajaxPopup {
+          background: transparent;
+          color: rgba(21, 55, 122, 1);
+          background-clip: none;
+          filter: none;
+      }
+
+    }
+    </style>
+ <script>
+    $(document).ready(function(){
+
+        $('.ajaxPopup').click(function(event) {
+          event.preventDefault();
+          $(this).modal();
+        });
+
+        $('.slider1').bxSlider({
+          slideWidth: 900,
+          minSlides: 1,
+          maxSlides: 1,
+          slideMargin: 10,
+          auto: 1,
+          speed: 1000,
+          pause: 4000
+        });
+      });
+
+    </script>
+
+  </head>
+  <body>
+    <header>
+    	<a class="logo-menapace" href="/menapace/"></a> <!--
+      <div class="contacto">
+        <a href="ajax/contacto.html" class="ajaxPopup">Contacto</a>
+      </div> -->
+      <a class="back-home" href="../index.html">
+          <img src="img/home-icon.png">
+          Volver a la Home
+      </a>
+    </header>
+    <div class="marcas">
+        <div class="slider1">
+          <div class="slide"><img src="img/slide/slide_01.jpg"></div>
+          <div class="slide"><img src="img/slide/slide_02.jpg"></div>
+        </div>
+
+    </div>
+
+    <nav>
+      <ol>
+        <li class="section1">
+          <img src="img/icono-arbol.png" />
+          <a href="ajax/ingreso.html" class="ajaxPopup">Ingresar al<br /><strong>Árbol genealógico</strong></a>
+        </li>
+        <li class="section2">
+          <img src="img/icono-ingreso.png" />
+          <a href="ajax/solicitud.html" class="ajaxPopup">Solicitar<br /><strong>ingreso</strong></a>
+        </li>
+      </ol>
+    </nav>
+    <section>
+    </section>
+    <footer>
+        <a href="/menapace/"><p>Ingeniero Juan Carlos Menapace</p></a>
+    </footer>
+  </body>
+</html>

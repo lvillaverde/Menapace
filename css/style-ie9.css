@@ -1,0 +1,10 @@
+ol li a.ajaxPopup {
+    background: transparent;
+    color: rgba(21, 55, 122, 1);
+    background-clip: none;
+    filter: none;
+}
+
+.back-home img {
+	border: 0;
+}

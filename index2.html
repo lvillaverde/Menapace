@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Familia Menapace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+ <script>
+    $(document).ready(function(){
+        $('.slider1').bxSlider({
+          slideWidth: 900,
+          minSlides: 1,
+          maxSlides: 1,
+          slideMargin: 10,
+          auto: 1,
+          speed: 1000,
+          pause: 4000
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+    	<a class="logo-menapace" href="#"></a>
+      <div class="contacto">
+        <a>Contacto</a>
+      </div>
+    </header>
+    <div class="marcas">
+        <div class="slider1">
+          <div class="slide"><img src="img/slide/slide_03.jpg"></div>
+          <div class="slide"><img src="img/slide/slide_04.jpg"></div>
+        </div>
+
+    </div>
+
+    <script class="secret-source">
+      jQuery(document).ready(function($) {
+
+        $('#banner-fade').bjqs({
+          height      : 455,
+          width       : 940,
+          responsive  : true,
+          showcontrols : false
+        });
+
+      });
+    </script>
+
+    <nav>
+      <ol>
+        <li class="section1">
+          <img src="img/icono-arbol.png" />
+          <a>Ingresar al<br /><strong>Árbol genealógico</strong></a>
+        </li>
+        <li class="section2">
+          <img src="img/icono-ingreso.png" />
+          <a>Solicitar<br /><strong>ingreso</strong></a>
+        </li>
+      </ol>
+    </nav>
+    <section>
+    </section>
+    <footer>
+        <a href="/menapace/"><p>Ingeniero Juan Carlos Menapace</p></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<script type="text/javascript" src="js/contacto.js"></script>
+
+<div class="modalContacto">
+	<h2>Contáctenos</h2>
+	<p>Para contactarse con nosotros complete el siguiente formulario:</p>
+	<div class="contactoCont">
+	      <div id="c_information" class="hide">
+	        <p></p>
+	      </div>
+		<form id="c_form" name="contact">
+			<label>Nombre y apellido</label><input name="nombre" id="c_name" type="text" class="c_input"><br />
+			<label>Teléfono</label><input name="telefono"  id="c_tel" type="text" class="c_input"><br />
+		    <label>E-mail</label><input name="email"  id="c_mail" type="text" class="c_input"><br />
+			<label>Consulta</label><textarea name="mensaje"  id="c_msg"></textarea><br />
+			<div id="c_btns">
+			  <button name="send" onclick="cargaSendMail()" type="button" value="Enviar" class="btn-b" id="c_enviar">Enviar consulta</button>
+			</div>
+		</form>
+	</div>
+</div>
